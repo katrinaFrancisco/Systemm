@@ -1,0 +1,67 @@
+.footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 120px; // Adjust based on your Figma height
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: auto;
+  
+    .footer-container {
+      width: 100%;
+      max-width: 1920px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 80px;
+  
+      .footer-logo img {
+        height: 70px; // Adjust to match Figma
+        
+      }
+  
+      .footer-contact,
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+  
+        .contact-item,
+        .link-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 14px;
+        }
+      }
+  
+      .footer-socials {
+        display: flex;
+        gap: 15px;
+        font-size: 18px;
+  
+        svg {
+          color: white;
+          transition: color 0.3s;
+          cursor: pointer;
+  
+          &:hover {
+            color: gray;
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      background-color: black;
+      width: 100%;
+      border: 0cap;
+    }
+  }
+  

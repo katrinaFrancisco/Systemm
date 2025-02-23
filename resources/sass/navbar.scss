@@ -1,0 +1,49 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+  
+    &.scrolled {
+      background-color: rgba(0, 0, 0, 0.85);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .logo {
+      img {
+        height: 50px;
+        transition: transform 0.3s ease-in-out;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  
+    .auth-links {
+      display: flex;
+      gap: 20px;
+  
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+          color: #f0f0f0;
+        }
+      }
+    }
+  }
+  
