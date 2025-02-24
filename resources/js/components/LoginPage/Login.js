@@ -7,7 +7,9 @@ const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   return (
-    <div className="login-wrapper"> {/* Wrapper for centering */}
+    <div className="login-wrapper"
+    style={{ backgroundImage: "url('/images/blurbg.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+    > {/* Wrapper for centering */}
       <div className="login-container">
         <h2>Log-in to Account</h2>
 

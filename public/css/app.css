@@ -11981,7 +11981,7 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f5f5f5;
+  background: url("/images/blurbg.png") no-repeat center center/cover;
 }
 
 .login-container {
@@ -12109,7 +12109,7 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f5f5f5;
+  background: url("/images/blurbg.png") no-repeat center center/cover;
 }
 
 .signup-container {
@@ -12456,11 +12456,13 @@ textarea.form-control-lg {
   letter-spacing: 3px;
   font-family: inter;
 }
-.about-us .about-image {
+.about-us .about-image1 {
   flex: 1;
-  height: 728px;
+  height: 741px;
+  width: 443px;
   background: #f3f3f3;
-  border-radius: 5px;
+  border-radius: 20px;
+  background: url("/images/botbot.png") lightgray 50%/cover no-repeat;
 }
 
 .social-links {

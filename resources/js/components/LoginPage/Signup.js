@@ -8,7 +8,9 @@ const Signup = () => {
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
 
   return (
-    <div className="signup-wrapper">
+    <div className="signup-wrapper"
+    style={{ backgroundImage: "url('/images/blurbg.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+>
       <div className="signup-container">
         <h2>Create Account</h2>
 

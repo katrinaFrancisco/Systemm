@@ -202,11 +202,13 @@
     font-family: inter;
   }
 
-  .about-image {
+  .about-image1 {
     flex: 1;
-    height: 728px;  
+    height: 741px;
+    width: 443px;  
     background: #f3f3f3;
-    border-radius: 5px;
+    border-radius: 20px;
+    background: url( '/images/botbot.png' ) lightgray 50% / cover no-repeat;
   }
 }
 

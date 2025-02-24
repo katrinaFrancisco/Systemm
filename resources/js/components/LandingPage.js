@@ -75,6 +75,7 @@ const Section = ({ title, products }) => (
 
 const App = () => {
   return (
+
     <div className="landing-page">
       <Header /> {/* Added Header Component Here */}
       <header className="hero" style={{ backgroundImage: "url('/images/Lshoes.png')" }}>
@@ -95,11 +96,27 @@ const App = () => {
           <div className="about-text">
             <h2>About Us</h2>
             <p>
-              Our mission is to provide high-quality, stylish, and comfortable shoes that cater to all styles...
+              Our mission is to provide high-quality, stylish, and comfortable shoes that cater to all styles 
             </p>
+            <p>
+              and occasions. We carefully curate our collection from top brands and trusted manufacturers,
+            </p>
+            <p>
+              ensuring durability, performance, and fashion-forward designs.
+            </p>
+            <p>
+              Customer satisfaction is at the heart of everything we do. That’s why we prioritize quality,
+            </p>
+            <p>
+            affordability, and excellent service—so you can shop with confidence. Step into comfort
+            </p>
+            <p>
+            and style with us and find the perfect fit for every occasion!
+            </p>
+
           </div>
-          <div className="about-image"></div>
-        </section>
+          <div className="about-image1"></div>
+          </section>
       </main>
     </div>
   );
