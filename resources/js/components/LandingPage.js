@@ -9,7 +9,7 @@ const Header = () => {
         <img src="/images/logob.png" alt="Sole'O Logo" />
       </div>
       <nav className="auth-links">
-        <a href="/login">LOGIN</a> / <a href="/register">REGISTER</a>
+        <a href="/login">LOGIN</a> / <a href="/signup">REGISTER</a>
       </nav>
     </header>
   );
