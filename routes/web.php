@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/{any?}', function () {
     return view('welcome');
 })->where('any', '^(?!api).*$');
+
+Auth::routes(['verify' => true]);

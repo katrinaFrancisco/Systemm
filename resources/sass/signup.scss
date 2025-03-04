@@ -12,24 +12,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; // Full viewport height
-  background: url('/images/blurbg.png') no-repeat center center/cover;
+  height: 100vh;
+  background: url('/images/bglogin.png') no-repeat center center/cover;
+  padding: 1rem; /* Adds padding for better responsiveness */
 }
 
 .signup-container {
   background: #FFF;
-  width: 570px;
+  width: 100%;
+  max-width: 600px;
   padding: 2rem;
-  border-radius: 40px;
+  border-radius: 30px;
   border: 3px solid #9C9C9C;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
   }
@@ -47,13 +49,14 @@
     }
 
     input {
-      width: 483px;
-      padding: 0.5rem;
+      width: 100%;
+      padding: 0.75rem;
       border: none;
       border-bottom: 2px solid #9C9C9C;
       outline: none;
       font-size: 1rem;
       transition: border-color 0.3s ease-in-out;
+      background: transparent;
 
       &:focus {
         border-bottom: 2px solid black;
@@ -63,13 +66,14 @@
 
   .password-container {
     width: 100%;
+    position: relative;
 
     .password-input {
       display: flex;
       align-items: center;
       width: 100%;
       border-bottom: 2px solid #9C9C9C;
-      padding-right: 2rem; // Prevent text overlap with the icon
+      padding-bottom: 0.5rem;
 
       input {
         flex: 1;
@@ -77,7 +81,7 @@
         border: none;
         outline: none;
         font-size: 1rem;
-        background: transparent; // Ensure background matches the container
+        background: transparent;
       }
 
       .password-toggle {
@@ -99,8 +103,7 @@
   }
 
   .signup-button {
-    width: 483px;
-    height: 48px;
+    width: 100%;
     background: black;
     color: white;
     padding: 0.75rem;
@@ -128,5 +131,64 @@
         text-decoration: underline;
       }
     }
+  }
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 1.5rem;
+    border-radius: 25px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .input-group label {
+    font-size: 0.8rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .signup-button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .login-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .input-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .signup-button { 
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    height: 42px;
+  }
+
+  .login-text {
+    font-size: 0.75rem;
   }
 }

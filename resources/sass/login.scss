@@ -13,24 +13,25 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('/images/blurbg.png') no-repeat center center/cover;
+  background: url('/images/bglogin.png') no-repeat center center/cover;
+  padding: 1rem; /* Prevents content from hitting screen edges */
 }
-
 
 .login-container {
   background: #FFF;
-  width: 570px;
+  width: 100%;
+  max-width: 600px;
   padding: 2rem;
-  border-radius: 40px;
+  border-radius: 30px;
   border: 3px solid #9C9C9C;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
   }
@@ -40,21 +41,15 @@
     margin-bottom: 1rem;
     width: 100%;
 
-    label {
-      display: block;
-      font-size: 0.85rem;
-      color: #333;
-      margin-bottom: 0.3rem;
-    }
-
     input {
-      width: 483px;
+      width: 100%;
       padding: 0.5rem;
       border: none;
       border-bottom: 2px solid #9C9C9C;
       outline: none;
       font-size: 1rem;
       transition: border-color 0.3s ease-in-out;
+      background: transparent;
 
       &:focus {
         border-bottom: 2px solid black;
@@ -64,13 +59,14 @@
 
   .password-container {
     width: 100%;
+    position: relative;
 
     .password-input {
       display: flex;
       align-items: center;
       width: 100%;
       border-bottom: 2px solid #9C9C9C;
-      padding-right: 2rem; // Prevent text overlap with the icon
+      padding-bottom: 0.5rem;
 
       input {
         flex: 1;
@@ -78,7 +74,7 @@
         border: none;
         outline: none;
         font-size: 1rem;
-        background: transparent; // Ensure background matches the container
+        background: transparent;
       }
 
       .password-toggle {
@@ -116,7 +112,7 @@
   }
 
   .login-button {
-    width: 483px;
+    width: 100%;
     background: black;
     color: white;
     padding: 0.75rem;
@@ -144,5 +140,68 @@
         text-decoration: underline;
       }
     }
+  }
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 1.5rem;
+    border-radius: 25px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .forgot-password {
+    font-size: 0.8rem;
+  }
+
+  .signup-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .input-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .password-input input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .login-button {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    height: 40px;
+  }
+
+  .forgot-password {
+    font-size: 0.75rem;
+  }
+
+  .signup-text {
+    font-size: 0.75rem;
   }
 }

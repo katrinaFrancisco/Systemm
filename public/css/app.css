@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -11968,250 +11969,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-
-/* Wrapper to Center the Login Container */
-.login-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: url("/images/blurbg.png") no-repeat center center/cover;
-}
-
-.login-container {
-  background: #FFF;
-  width: 570px;
-  padding: 2rem;
-  border-radius: 40px;
-  border: 3px solid #9C9C9C;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.login-container h2, .login-container .h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-.login-container .input-group {
-  text-align: left;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.login-container .input-group label {
-  display: block;
-  font-size: 0.85rem;
-  color: #333;
-  margin-bottom: 0.3rem;
-}
-.login-container .input-group input {
-  width: 483px;
-  padding: 0.5rem;
-  border: none;
-  border-bottom: 2px solid #9C9C9C;
-  outline: none;
-  font-size: 1rem;
-  transition: border-color 0.3s ease-in-out;
-}
-.login-container .input-group input:focus {
-  border-bottom: 2px solid black;
-}
-.login-container .password-container {
-  width: 100%;
-}
-.login-container .password-container .password-input {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  border-bottom: 2px solid #9C9C9C;
-  padding-right: 2rem;
-}
-.login-container .password-container .password-input input {
-  flex: 1;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  background: transparent;
-}
-.login-container .password-container .password-input .password-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #777;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: color 0.3s;
-}
-.login-container .password-container .password-input .password-toggle:hover {
-  color: black;
-}
-.login-container .forgot-password {
-  text-align: right;
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.login-container .forgot-password a {
-  color: #3b82f6;
-  text-decoration: none;
-}
-.login-container .forgot-password a:hover {
-  text-decoration: underline;
-}
-.login-container .login-button {
-  width: 483px;
-  background: black;
-  color: white;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-.login-container .login-button:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.login-container .signup-text {
-  font-size: 0.85rem;
-  margin-top: 1rem;
-}
-.login-container .signup-text a {
-  color: #3b82f6;
-  font-weight: 600;
-  text-decoration: none;
-}
-.login-container .signup-text a:hover {
-  text-decoration: underline;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-
-/* Wrapper to Center the Signup Container */
-.signup-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: url("/images/blurbg.png") no-repeat center center/cover;
-}
-
-.signup-container {
-  background: #FFF;
-  width: 570px;
-  padding: 2rem;
-  border-radius: 40px;
-  border: 3px solid #9C9C9C;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.signup-container h2, .signup-container .h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-.signup-container .input-group {
-  text-align: left;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.signup-container .input-group label {
-  display: block;
-  font-size: 0.85rem;
-  color: #333;
-  margin-bottom: 0.3rem;
-}
-.signup-container .input-group input {
-  width: 483px;
-  padding: 0.5rem;
-  border: none;
-  border-bottom: 2px solid #9C9C9C;
-  outline: none;
-  font-size: 1rem;
-  transition: border-color 0.3s ease-in-out;
-}
-.signup-container .input-group input:focus {
-  border-bottom: 2px solid black;
-}
-.signup-container .password-container {
-  width: 100%;
-}
-.signup-container .password-container .password-input {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  border-bottom: 2px solid #9C9C9C;
-  padding-right: 2rem;
-}
-.signup-container .password-container .password-input input {
-  flex: 1;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  background: transparent;
-}
-.signup-container .password-container .password-input .password-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #777;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: color 0.3s;
-}
-.signup-container .password-container .password-input .password-toggle:hover {
-  color: black;
-}
-.signup-container .signup-button {
-  width: 483px;
-  height: 48px;
-  background: black;
-  color: white;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-.signup-container .signup-button:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.signup-container .login-text {
-  font-size: 0.85rem;
-  margin-top: 1rem;
-}
-.signup-container .login-text a {
-  color: #3b82f6;
-  font-weight: 600;
-  text-decoration: none;
-}
-.signup-container .login-text a:hover {
-  text-decoration: underline;
-}
-
 .footer {
   background-color: black;
   color: white;
@@ -12270,288 +12027,6 @@ textarea.form-control-lg {
   background-color: black;
   width: 100%;
   border: 0cap;
-}
-
-.landing-page {
-  font-family: sans-serif;
-}
-
-.hero {
-  padding-top: 80px;
-}
-
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2rem;
-  color: white;
-  position: relative;
-  width: 100%;
-  background: url("/images/Lshoes.png") no-repeat center center/cover;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: -1;
-}
-.hero .hero-content {
-  max-width: 500px;
-  z-index: 1;
-}
-.hero .hero-content h1, .hero .hero-content .h1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 6.4px;
-}
-.hero .hero-content p {
-  color: #000;
-  text-align: left;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px; /* 208.333% */
-  letter-spacing: 4.8px;
-}
-.hero .shop-now {
-  margin-top: 1rem;
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-  width: 183px;
-  height: 48px;
-  font-family: inter;
-  letter-spacing: 4.8px;
-}
-.hero .shop-now:hover {
-  background: #bbb;
-}
-
-.content {
-  padding: 2rem;
-  font-style: italic;
-}
-
-.trending-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 48px;
-  font-style: italic;
-  width: 476px;
-  height: 69px;
-}
-
-.category-section {
-  margin-bottom: 2rem;
-}
-.category-section .section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.category-section .product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-@media (max-width: 1024px) {
-  .category-section .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .category-section .product-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.product-card {
-  width: 315px;
-  height: 400px;
-  border-radius: 25px;
-  border: 2px solid #ddd;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-.product-card .image-placeholder {
-  width: 100%;
-  height: 250px;
-  background: #f3f3f3;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-}
-.product-card .product-title {
-  font-weight: bold;
-  font-size: 1rem;
-  font-style: normal;
-}
-.product-card .rating {
-  display: flex;
-  justify-content: left;
-  gap: 3px;
-  margin: 5px 0;
-}
-.product-card .price {
-  color: #007bff;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: left;
-  font-style: normal;
-}
-.product-card .cart-btn {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-  transition: background 0.3s ease-in-out;
-}
-.product-card .cart-btn:hover {
-  background: #0056b3;
-}
-
-.about-us {
-  display: flex;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-.about-us h2, .about-us .h2 {
-  width: 476px;
-  height: 69px;
-  border-width: 1px;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 48px;
-}
-.about-us p {
-  font-style: normal;
-  letter-spacing: 3px;
-  font-family: inter;
-}
-.about-us .about-image1 {
-  flex: 1;
-  height: 741px;
-  width: 443px;
-  background: #f3f3f3;
-  border-radius: 20px;
-  background: url("/images/botbot.png") lightgray 50%/cover no-repeat;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-.social-links a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-.social-links a:hover {
-  color: #007bff;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.auth-links {
-  display: flex;
-  gap: 1rem;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.auth-links a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s ease-in-out;
-}
-.auth-links a:hover {
-  color: gray;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  z-index: 1000;
-}
-.navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.85);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-.navbar .logo img {
-  height: 50px;
-  transition: transform 0.3s ease-in-out;
-}
-.navbar .logo img:hover {
-  transform: scale(1.05);
-}
-.navbar .auth-links {
-  display: flex;
-  gap: 20px;
-}
-.navbar .auth-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.navbar .auth-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #f0f0f0;
 }
 
 .header {
@@ -12993,4 +12468,819 @@ textarea.form-control-lg {
     bottom: 6px;
     right: 6px;
   }
+}
+.landing-page {
+  font-family: sans-serif;
+}
+
+.hero {
+  padding-top: 80px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  width: 100%;
+  background: url("/images/Lshoes.png") no-repeat center center/cover;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.hero .hero-content {
+  max-width: 500px;
+  z-index: 1;
+}
+.hero .hero-content h1, .hero .hero-content .h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 6.4px;
+}
+.hero .hero-content p {
+  color: #000;
+  text-align: left;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 208.333% */
+  letter-spacing: 4.8px;
+}
+.hero .shop-now {
+  margin-top: 1rem;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 183px;
+  height: 48px;
+  font-family: Inter;
+  letter-spacing: 4.8px;
+}
+.hero .shop-now:hover {
+  background: #2e2e2e;
+}
+
+.content {
+  padding: 2rem;
+  font-style: italic;
+}
+
+.trending-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 48px;
+  font-style: italic;
+  width: 476px;
+  height: 69px;
+}
+
+.category-section {
+  margin-bottom: 2rem;
+}
+.category-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.category-section .category-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  font-family: Inter;
+}
+.category-section .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+@media (max-width: 1024px) {
+  .category-section .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .category-section .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cart-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 600px;
+  max-width: 90%;
+  z-index: 1100;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cart-modal p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: Inter;
+}
+.cart-modal .login-signup-button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s ease;
+}
+.cart-modal .login-signup-button:hover {
+  background: #2e2e2e;
+}
+.cart-modal .close-modal {
+  background: #ccc;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+.cart-modal .close-modal:hover {
+  background: #aaa;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.product-card .product-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.product-card .product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 0;
+  color: #333;
+  font-family: Inter;
+}
+.product-card .rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+}
+.product-card .price-cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.product-card .price {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  font-family: Inter;
+}
+.product-card .cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.5rem;
+  color: #000;
+}
+.product-card .cart-button:hover {
+  color: #272727;
+}
+.product-card .cart-icon {
+  font-size: 1.5rem;
+}
+
+.about-us {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.about-us h2, .about-us .h2 {
+  width: 476px;
+  height: 69px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 48px;
+}
+.about-us p {
+  font-style: normal;
+  letter-spacing: 3px;
+  font-family: Inter;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.social-links a:hover {
+  color: #007bff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  background: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover {
+  color: gray;
+}
+
+.view-more {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #000;
+  font-family: Inter;
+  transition: font-weight 0.3s ease-in-out;
+}
+.view-more:hover {
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Wrapper to Center the Login Container */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/bglogin.png") no-repeat center center/cover;
+  padding: 1rem; /* Prevents content from hitting screen edges */
+}
+
+.login-container {
+  background: #FFF;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 30px;
+  border: 3px solid #9C9C9C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.login-container h2, .login-container .h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.login-container .input-group {
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.login-container .input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #9C9C9C;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+  background: transparent;
+}
+.login-container .input-group input:focus {
+  border-bottom: 2px solid black;
+}
+.login-container .password-container {
+  width: 100%;
+  position: relative;
+}
+.login-container .password-container .password-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #9C9C9C;
+  padding-bottom: 0.5rem;
+}
+.login-container .password-container .password-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+.login-container .password-container .password-input .password-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s;
+}
+.login-container .password-container .password-input .password-toggle:hover {
+  color: black;
+}
+.login-container .forgot-password {
+  text-align: right;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.login-container .forgot-password a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+.login-container .forgot-password a:hover {
+  text-decoration: underline;
+}
+.login-container .login-button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.login-container .login-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.login-container .signup-text {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+.login-container .signup-text a {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-container .signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+/* Tablets */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 1.5rem;
+    border-radius: 25px;
+  }
+  h2, .h2 {
+    font-size: 1.4rem;
+  }
+  .login-button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .forgot-password {
+    font-size: 0.8rem;
+  }
+  .signup-text {
+    font-size: 0.8rem;
+  }
+}
+/* Mobile */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  h2, .h2 {
+    font-size: 1.3rem;
+  }
+  .input-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .password-input input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .login-button {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    height: 40px;
+  }
+  .forgot-password {
+    font-size: 0.75rem;
+  }
+  .signup-text {
+    font-size: 0.75rem;
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 1000;
+}
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar .logo img {
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar .logo img:hover {
+  transform: scale(1.05);
+}
+.navbar .auth-links {
+  display: flex;
+  gap: 20px;
+}
+.navbar .auth-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.navbar .auth-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Wrapper to Center the Signup Container */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/bglogin.png") no-repeat center center/cover;
+  padding: 1rem; /* Adds padding for better responsiveness */
+}
+
+.signup-container {
+  background: #FFF;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 30px;
+  border: 3px solid #9C9C9C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.signup-container h2, .signup-container .h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.signup-container .input-group {
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.signup-container .input-group label {
+  display: block;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+.signup-container .input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 2px solid #9C9C9C;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+  background: transparent;
+}
+.signup-container .input-group input:focus {
+  border-bottom: 2px solid black;
+}
+.signup-container .password-container {
+  width: 100%;
+  position: relative;
+}
+.signup-container .password-container .password-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #9C9C9C;
+  padding-bottom: 0.5rem;
+}
+.signup-container .password-container .password-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+.signup-container .password-container .password-input .password-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s;
+}
+.signup-container .password-container .password-input .password-toggle:hover {
+  color: black;
+}
+.signup-container .signup-button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.signup-container .signup-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.signup-container .login-text {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+.signup-container .login-text a {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+.signup-container .login-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+/* Tablets */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 1.5rem;
+    border-radius: 25px;
+  }
+  h2, .h2 {
+    font-size: 1.4rem;
+  }
+  .input-group label {
+    font-size: 0.8rem;
+  }
+  .input-group input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  .signup-button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .login-text {
+    font-size: 0.8rem;
+  }
+}
+/* Mobile */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  h2, .h2 {
+    font-size: 1.3rem;
+  }
+  .input-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .signup-button {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    height: 42px;
+  }
+  .login-text {
+    font-size: 0.75rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Wrapper to Center the Forgot Password Container */
+.forgot-password-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/bglogin.png") no-repeat center center/cover;
+}
+
+.forgot-password-container {
+  background: #FFF;
+  width: 570px;
+  padding: 2rem;
+  border-radius: 40px;
+  border: 3px solid #9C9C9C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forgot-password-container h2, .forgot-password-container .h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.forgot-password-container .input-group {
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.forgot-password-container .input-group label {
+  display: block;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+.forgot-password-container .input-group input {
+  width: 483px;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #9C9C9C;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+.forgot-password-container .input-group input:focus {
+  border-bottom: 2px solid black;
+}
+.forgot-password-container .forgot-password-button {
+  width: 483px;
+  background: black;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.forgot-password-container .forgot-password-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.forgot-password-container .forgot-password-button:disabled {
+  background: #9C9C9C;
+  cursor: not-allowed;
+}
+.forgot-password-container .message {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.forgot-password-container .message.success {
+  color: #28a745;
+}
+.forgot-password-container .message.error {
+  color: #dc3545;
+}
+.forgot-password-container .back-to-login {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+.forgot-password-container .back-to-login a {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+.forgot-password-container .back-to-login a:hover {
+  text-decoration: underline;
 }

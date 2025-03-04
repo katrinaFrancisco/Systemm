@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 
 import Login from "./LoginPage/Login";
 import Signup from "./LoginPage/Signup";
+import ForgotPassword from "./LoginPage/ForgotPassword";  // ✅ Import Forgot Password Component
 import Footer from "./LoginPage/Footer";
 import LandingPage from "./LandingPage"; 
 import Homepage from "./User/Homepage";
@@ -14,10 +15,10 @@ const App = () => {
     const location = useLocation();
     
     // Define routes where Header should be hidden
-    const hideHeaderRoutes = ["/", "/login", "/signup"];
+    const hideHeaderRoutes = ["/", "/login", "/signup", "/forgot-password"];
 
     // Define routes where Footer should be hidden
-    const hideFooterRoutes = ["/login", "/signup"];
+    const hideFooterRoutes = ["/login", "/signup", "/forgot-password"];
 
     return (
         <div className="app-container">
@@ -27,12 +28,13 @@ const App = () => {
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />  {/* ✅ Added Forgot Password Route */}
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/homepage" element={<Homepage />} />
                 <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
 
-            {/* ✅ Hide Footer on Login & Signup pages */}
+            {/* ✅ Hide Footer on Login, Signup, and Forgot Password pages */}
             {!hideFooterRoutes.includes(location.pathname) && <Footer />}
         </div>
     );

@@ -19,6 +19,9 @@ const Signup = () => {
   const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
+  // API URL from environment variables
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+
   // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -47,7 +50,7 @@ const Signup = () => {
     const roleType = determineRole(formData.email);
 
     try {
-      const response = await axios.post("http://localhost:8000/api/register", {
+      const response = await axios.post(`${API_URL}/api/register`, {
         first_name: formData.first_name,
         last_name: formData.last_name,
         username: formData.username,
@@ -57,14 +60,21 @@ const Signup = () => {
         role_type: roleType,
       });
 
+      // Success message
       setSuccessMessage("Account created successfully! You can now login.");
-      setError("");
+      setError(""); // Clear any previous error messages
     } catch (error) {
       console.error("Registration Error:", error.response?.data);
-      setError(
-        error.response?.data?.message ||
-        "Something went wrong! Please check your inputs."
-      );
+
+      // Handle Laravel validation errors
+      if (error.response && error.response.data.errors) {
+        const messages = Object.values(error.response.data.errors)
+          .flat()
+          .join("\n");
+        setError(messages);
+      } else {
+        setError("Something went wrong! Please check your inputs.");
+      }
     }
   };
 

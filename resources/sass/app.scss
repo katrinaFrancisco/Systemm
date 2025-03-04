@@ -7,10 +7,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-@import 'login';
-@import 'signup';
+
 @import 'footer';
-@import 'landingP';
-@import 'navbar';
 @import 'header';
 @import 'homepage';
+@import 'landingP';
+@import 'login';
+@import 'navbar';
+@import 'signup';
+@import 'forgotpass';
